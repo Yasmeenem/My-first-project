@@ -2,7 +2,7 @@ FROM openjdk
 
 WORKDIR /application
 
-COPY yasmin.java
+COPY yasmin.java .
 
 RUN javac yasmin.java
 
