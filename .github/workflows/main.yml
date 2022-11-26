@@ -21,7 +21,7 @@ jobs:
         run: docker build -t ${{secrets.Devolper}}/myimage .
 
       - name: "Pushing Docker Hup"
-        run: docker push ${{secrets.Devolper}}/myimage
+        run: docker push ${{secrets.Devolper}}/myimage .
 
     
           
