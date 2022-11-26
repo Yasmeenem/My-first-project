@@ -18,10 +18,10 @@ jobs:
         run: docker login --username ${{secrets.Devolper}} --password ${{secrets.cs}}
 
       - name: "Building docker image"
-        run: docker build -t yasminemad/myimage .
+        run: docker build -t ${{secrets.Devolper}}/myimage .
 
       - name: "Pushing to docker hup"
-        run: docker push yasminemad/myimage
+        run: docker push ${{secrets.Devolper}}/myimage 
 
     
           
