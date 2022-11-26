@@ -17,11 +17,11 @@ jobs:
       - name: "login to docker hub"
         run: docker login --username ${{secrets.Devolper}} --password ${{secrets.cs}}
 
-      - name: "Building Docker Image"
-        run: docker build -t ${{secrets.Devolper}}/name .
+      - name: "Building docker image"
+        run: docker build -t ${{secrets.Devolper}}/myimage .
 
-      - name: "Pushing Docker Hup"
-        run: docker push ${{secrets.Devolper}}/name
+      - name: "Pushing to docker hup"
+        run: docker push ${{secrets.Devolper}}/myimage
 
     
           
